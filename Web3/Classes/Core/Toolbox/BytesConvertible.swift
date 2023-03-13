@@ -31,7 +31,7 @@ public protocol BytesInitializable {
 /**
  * Implementable if a type is BytesRepresentable and BytesInitializable
  */
-public typealias BytesConvertible = BytesRepresentable & BytesInitializable
+public typealias BytesConvertible = BytesRepresentable //& BytesInitializable
 
 extension BytesInitializable {
     public init(bytes: BytesRepresentable) throws {
